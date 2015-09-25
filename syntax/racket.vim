@@ -80,6 +80,9 @@ syn keyword racketSyntax make-custodian-box custodian-box-value
 " lambda sign
 syn match racketSyntax /\<[\u03bb]\>/
 
+" #lang plai
+syn keyword racketSyntax define-type type-case test
+
 " Functions
 
 syn keyword racketFunc boolean? not equal? eqv? eq? equal?/recur immutable?

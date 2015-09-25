@@ -381,6 +381,12 @@ syn keyword racketFunc path-replace-suffix path-add-suffix
 syn keyword racketFunc explode-path file-name-from-path filename-extension find-relative-path normalize-path
 syn keyword racketFunc path-element? path-only simple-form-path some-simple-path->string string->some-system-path
 
+" CPSC 311
+syn keyword racketFunc num num? plus plus? lessthan lessthan?
+syn keyword racketFunc interp subst parse-Fun unparse
+syn keyword racketFunc AE? WAE? Expr? E?
+syn keyword racketFunc with
+syn keyword racketFunc lam app
 
 
 syn match racketDelimiter !\<\.\>!

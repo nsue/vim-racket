@@ -383,10 +383,58 @@ syn keyword racketFunc path-element? path-only simple-form-path some-simple-path
 
 " CPSC 311
 syn keyword racketFunc num num? plus plus? lessthan lessthan?
-syn keyword racketFunc interp subst parse-Fun unparse
+syn keyword racketFunc Num Num?
+
+syn keyword racketFunc interp subst
+syn keyword racketFunc parse parse-op parse-Fun parse-pair-case parse-list-case parse-type
+
+syn keyword racketFunc build-> ->
+
+syn keyword racketFunc valid-binop
+syn keyword racketFunc racket-boolean-to-Fun-boolean
+syn keyword racketFunc apply-binop
+
+syn keyword racketFunc unparse
+syn keyword racketFunc unparse-type unparse-op
+syn keyword racketFunc unparse-env
+
+syn keyword racketFunc do-parse
+syn keyword racketFunc do-parse-interp
+
+syn keyword racketFunc op-signature
+
+
 syn keyword racketFunc AE? WAE? Expr? E?
-syn keyword racketFunc with
-syn keyword racketFunc lam app
+syn keyword racketFunc with with*
+syn keyword racketFunc lam
+syn keyword racketFunc app app-expr app-lazy
+syn keyword racketFunc lazy-ptr lazy-thk
+syn keyword racketFunc ref deref setref location
+syn keyword racketFunc clo
+syn keyword racketFunc rec
+syn keyword racketFunc clo-rec
+syn keyword racketFunc thk
+syn keyword racketFunc pair pair-case pair-left pair-right swap fst snd
+syn keyword racketFunc list-empty list-cons list-case
+syn keyword racketFunc ite
+syn keyword racketFunc Bool Bool?
+syn keyword racketFunc bfalse btrue
+syn keyword racketFunc Op Op?
+syn keyword racketFunc binop plusop minusop equalsop lessthanop
+
+syn keyword racketFunc Type Type?
+syn keyword racketFunc Typing-context Typing-context?
+syn keyword racketFunc t/num t/bool t/-> t/* t/list
+syn keyword racketFunc tc/empty tc/cons-tp look-up-type
+syn keyword racketFunc type=? typeof typeof-program
+
+syn keyword racketFunc Env Env?
+syn keyword racketFunc env-interp
+syn keyword racketFunc env/empty env/cons-id env/cons-id-box
+syn keyword racketFunc look-up-id
+
+syn keyword racketFunc Store Store?
+syn keyword racketFunc store/empty store/cons-loc
 
 
 syn match racketDelimiter !\<\.\>!
